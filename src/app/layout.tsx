@@ -16,6 +16,7 @@ import { ScrollProgress } from "@/components/ui/ScrollProgress";
 import { BackgroundParticles } from "@/components/ui/BackgroundParticles";
 import LoadingScreen from "@/components/ui/LoadingScreen";
 import { Footer } from "@/components/ui/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -112,6 +113,7 @@ export default function RootLayout({
             <Footer />
           </TrackProvider>
         </ScrollProvider>
+        <Analytics />
       </body>
     </html>
   );
